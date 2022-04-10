@@ -1,4 +1,4 @@
-import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
+import { HashRouter as Router, Routes, Route } from "react-router-dom";
 import React, { useEffect, useState } from 'react'
 import Home from './components/Home';
 import Nav from './components/Header/Nav';
@@ -14,7 +14,7 @@ const RouteSwitch = () => {
       <Header />
       <Nav />
       <Routes>
-        <Route path="" element={<Home />} />
+        <Route path="/" element={<Home />} />
         <Route path="/shop" element={<Shop />} />
       </Routes>
       <SignUpFooter />
