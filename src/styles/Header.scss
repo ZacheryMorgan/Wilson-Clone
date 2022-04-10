@@ -1,0 +1,21 @@
+.header-list {
+  list-style: none;
+  counter-reset: my-awesome-counter;
+
+  li {
+    counter-increment: my-awesome-counter;
+  }
+
+  li::before {
+    content: '';
+    background: white;
+    width: .6rem;
+    height: .6rem;
+    border-radius: 50%;
+    display: inline-block;
+    line-height: 2rem;
+    color: white;
+    text-align: center;
+    margin-right: 0.5rem;
+  }
+}

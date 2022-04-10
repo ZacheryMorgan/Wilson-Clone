@@ -1,0 +1,41 @@
+* {
+  color: #101820
+}
+
+@media only screen and (min-width: 770px) {
+  main {
+    .main-header {
+      .main-header-text {
+        position: absolute;
+        border: unset;
+
+        .title {
+          font-size: 1.5rem;
+          line-height: 1;
+          padding-bottom: 12px;
+          font-weight: bold;
+        }
+
+        .sub {
+          font-size: .8rem;
+          line-height: 1;
+          letter-spacing: 1px;
+          font-weight: bold;
+          padding-bottom: 25px;
+        }
+
+        button {
+          padding: 12px 20px 12px 20px;
+          font-size: 1rem;
+          line-height: 1;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+
+// .title text-5xl font-extrabold uppercase pb-2
+// .sub text-xl font-semibold pb-4
+// button py-3 px-6 text-2xl font-semibold 

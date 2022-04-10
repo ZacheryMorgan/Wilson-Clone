@@ -1,0 +1,19 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component renders Header component correctly 1`] = `
+<div>
+  <header
+    class="bg-[#101820] flex items-center justify-center h-9"
+  >
+    <ol
+      class="list-disc header-list"
+    >
+      <li
+        class="underline cursor-pointer text-white flex items-center text-xs tracking-wider"
+      >
+        Free Shipping on Orders Over $50
+      </li>
+    </ol>
+  </header>
+</div>
+`;

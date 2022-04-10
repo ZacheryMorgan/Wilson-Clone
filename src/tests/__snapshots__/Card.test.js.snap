@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Card component renders card component correctly 1`] = `
+<div>
+  <div
+    class="card-wrapper  shadow-md shadow-black rounded-sm"
+  >
+    <div
+      class="img-wrapper relative"
+    >
+      <img
+        alt=""
+        class="w-96"
+        src="./assets/Shell1.jpg"
+      />
+      <p
+        class="name absolute bottom-0 bg-white px-3 py-1 rounded-sm -translate-x-1/2 left-1/2 font-bold"
+      >
+        Kayle's Shell
+      </p>
+    </div>
+    <section
+      class="price-wrapper
+ flex justify-between items-center px-7 h-12"
+    >
+      <p
+        class="price font-bold"
+      >
+        $10.00
+      </p>
+      <input
+        class="w-14"
+        id=""
+        name=""
+        placeholder="0"
+        type="number"
+      />
+    </section>
+  </div>
+</div>
+`;
