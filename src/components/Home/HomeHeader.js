@@ -7,7 +7,7 @@ const MainHeader = () => {
       ">
       <div className="main-header-img">
         <picture>
-          <source srcSet="./assets/ShoreBg.jpg" media="(min-width: 770px)" />
+          <source srcSet="./assets/ShoreBG.jpg" media="(min-width: 770px)" />
           <img src="./assets/ShoreBGSmall.jpg" alt="" />
         </picture>
       </div>
