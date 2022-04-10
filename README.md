@@ -7,6 +7,7 @@
 - Tailwind
 - React-icons
 - React-router-dom
+- Sass (for upscaling media queries)
 
 ### Just to Practice
 - Fully built mobile first with Tailwind and Sass for media queries.
