@@ -1,0 +1,14 @@
+{
+  "files": {
+    "main.css": "/Wilson-Clone/static/css/main.31893664.css",
+    "main.js": "/Wilson-Clone/static/js/main.8f4ad870.js",
+    "static/media/OPTITomaso-Extended.otf": "/Wilson-Clone/static/media/OPTITomaso-Extended.806d41d3f5087797388f.otf",
+    "index.html": "/Wilson-Clone/index.html",
+    "main.31893664.css.map": "/Wilson-Clone/static/css/main.31893664.css.map",
+    "main.8f4ad870.js.map": "/Wilson-Clone/static/js/main.8f4ad870.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.31893664.css",
+    "static/js/main.8f4ad870.js"
+  ]
+}
