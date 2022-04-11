@@ -38,10 +38,10 @@ const Shop = () => {
           <span className='text-xs tracking-wider font-black' >28 Results</span>
         </div>
       </div>
-      <div className="shop-wrapper w-full">
+      <div className="shop-wrapper w-full flex">
         <ShopFilter filter={showFilter} toggle={toggle}/>
         <div className="shop-elements-wrapper
-          grid grid-cols-2 gap-4 w-full p-4
+          grid grid-cols-2 gap-4 w-full pb-10
         ">
           {shellElements}
         </div>

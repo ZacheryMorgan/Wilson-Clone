@@ -1,11 +1,11 @@
 import React, { useState } from 'react';
-import { BsXLg } from 'react-icons/bs'
+import ShopFilterPopout from './ShopFilterPopout';
 
 const ShopFilter = ({ filter, toggle }) => {
 
   const [showCategory, setShowCategory] = useState(false)
   const [showSeries, setShowSeries] = useState(false)
- 
+
 
   const show = {
     'visibility': 'visible',
@@ -19,52 +19,67 @@ const ShopFilter = ({ filter, toggle }) => {
     'transition': 'visibility .5s linear,left .5s ease-in-out'
   }
 
+  const toggleCategory = () => {
+    setShowCategory(prev => !prev)
+  }
+  const toggleSeries = () => {
+    setShowSeries(prev => !prev)
+  }
+
   return (
-    <aside
-      className="shop-filter-wrapper fixed z-50 top-0 w-screen h-screen bg-white p-5 transition overflow-y-scroll tracking-widest"
-      style={filter ? show : hide}
-    >
-      <div className="filter-header flex justify-between items-center pb-6 pr-3">
-        <h1 className='text-lg font-black tracking-wider' >FILTER</h1>
-        <BsXLg className="font-black hover:fill-red-600 cursor-pointer transition-all fill-gray-400" onClick={toggle}></BsXLg>
-      </div>
-      <div className="filter-list border-y border-gray-400">
-        <div
-          className="filter-header flex justify-between cursor-pointer hover:bg-gray-100  pr-2 py-4"
-          onClick={() => setShowCategory(prev => !prev)}
-        >
-          <p className='font-black' >Category</p>
-          <p className='font-black'>{showCategory ? '-' : '+'}</p>
+    <div className="shop-filters w-0">
+      <ShopFilterPopout
+        toggle={toggle}
+        filter={filter}
+        show={show}
+        hide={hide}
+        toggleCategory={toggleCategory}
+        toggleSeries={toggleSeries}
+        series={showSeries}
+        category={showCategory}
+      />
+      <aside
+        className="shop-filter-wrapper top-0 bg-white p-5 tracking-widest hidden"
+      >
+          <h1 className='text-lg font-black tracking-wider pb-9' >FILTER</h1>
+        <div className="filter-list border-y border-gray-400">
+          <div
+            className="filter-header flex justify-between cursor-pointer hover:bg-gray-100  pr-2 py-4"
+            onClick={toggleCategory}
+          >
+            <p className='font-black' >Category</p>
+            <p className='font-black'>{showCategory ? '-' : '+'}</p>
+          </div>
+          {showCategory &&
+            <ul className='pl-5 pb-5 tracking-wide text-sm flex flex-col gap-2' >
+              <li className='cursor-pointer hover:underline' >Shells</li>
+              <li className='cursor-pointer hover:underline' >Shark Teeth</li>
+              <li className='cursor-pointer hover:underline' >Fossils</li>
+              <li className='cursor-pointer hover:underline' >Driftwood</li>
+              <li className='cursor-pointer hover:underline' >Fish?</li>
+            </ul>
+          }
         </div>
-        {showCategory &&
-          <ul className='pl-5 pb-2 tracking-wide text-sm flex flex-col gap-2' >
-            <li className='cursor-pointer hover:underline' >Shells</li>
-            <li className='cursor-pointer hover:underline' >Shark Teeth</li>
-            <li className='cursor-pointer hover:underline' >Fossils</li>
-            <li className='cursor-pointer hover:underline' >Driftwood</li>
-            <li className='cursor-pointer hover:underline' >Fish?</li>
-          </ul>
-        }
-      </div>
-      <div className="filter-list border-y border-gray-400">
-        <div
-          className="filter-header flex justify-between cursor-pointer hover:bg-gray-100  pr-2 py-4"
-          onClick={() => setShowSeries(prev => !prev)}
-        >
-          <p className='font-black' >Series</p>
-          <p className='font-black'>{showSeries ? '-' : '+'}</p>
+        <div className="filter-list border-y border-gray-400">
+          <div
+            className="filter-header flex justify-between cursor-pointer hover:bg-gray-100  pr-2 py-4"
+            onClick={toggleSeries}
+          >
+            <p className='font-black' >Series</p>
+            <p className='font-black'>{showSeries ? '-' : '+'}</p>
+          </div>
+          {showSeries &&
+            <ul className='pl-5 pb-2 tracking-wide font-normal text-sm flex flex-col gap-1' >
+              <li className='cursor-pointer hover:underline' >Tiny</li>
+              <li className='cursor-pointer hover:underline' >Small</li>
+              <li className='cursor-pointer hover:underline' >Medium</li>
+              <li className='cursor-pointer hover:underline' >Large</li>
+              <li className='cursor-pointer hover:underline' >Giant</li>
+            </ul>
+          }
         </div>
-        {showSeries &&
-          <ul className='pl-5 pb-2 tracking-wide font-normal text-sm flex flex-col gap-1' >
-            <li className='cursor-pointer hover:underline' >Tiny</li>
-            <li className='cursor-pointer hover:underline' >Small</li>
-            <li className='cursor-pointer hover:underline' >Medium</li>
-            <li className='cursor-pointer hover:underline' >Large</li>
-            <li className='cursor-pointer hover:underline' >Giant</li>
-          </ul>
-        }
-      </div>
-    </aside>
+      </aside>
+    </div>
   )
 }
 

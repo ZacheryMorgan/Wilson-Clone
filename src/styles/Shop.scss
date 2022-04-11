@@ -1,12 +1,32 @@
 @media only screen and (min-width: 770px) {
 
+
+  .mobile-filter-wrapper {
+    visibility: hidden !important;
+    left: -100vw;
+    transition: visibility .5s linear, left .5s ease-in-out;
+  }
+
   .mobile-sort {
     display: none;
   }
 
   .shop-filter-wrapper {
-    visibility: hidden !important;
-    left: -100vw;
-    transition: visibility .5s linear,left .5s ease-in-out;
+    display: block;
   }
+
+  .shop-filters {
+    width: 33%
+  }
+
+  .shop-elements-wrapper {
+    grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media only screen and (min-width: 1280px) {
+  .shop-elements-wrapper {
+    grid-template-columns: repeat(4, 1fr);
+  }
+
 }
