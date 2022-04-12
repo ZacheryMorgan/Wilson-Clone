@@ -1,5 +1,5 @@
 * {
-  color: #101820
+  color: #101820;
 }
 
 @media only screen and (min-width: 770px) {
@@ -17,7 +17,7 @@
         }
 
         .sub {
-          font-size: .8rem;
+          font-size: 0.8rem;
           line-height: 1;
           letter-spacing: 1px;
           font-weight: bold;
@@ -35,7 +35,6 @@
   }
 }
 
-
 // .title text-5xl font-extrabold uppercase pb-2
 // .sub text-xl font-semibold pb-4
-// button py-3 px-6 text-2xl font-semibold 
+// button py-3 px-6 text-2xl font-semibold

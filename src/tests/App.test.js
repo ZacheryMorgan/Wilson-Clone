@@ -5,6 +5,8 @@ import App from "./App";
 describe("App component", () => {
   it("renders correct heading", () => {
     const { getByRole } = render(<App />);
-    expect(getByRole("heading").textContent).toMatch(/Hello this is a test again/i);
+    expect(getByRole("heading").textContent).toMatch(
+      /Hello this is a test again/i
+    );
   });
 });

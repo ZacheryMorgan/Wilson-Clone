@@ -2,19 +2,24 @@
 @tailwind components;
 @tailwind utilities;
 
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300;400;500;600;700;800&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Anek+Tamil:wght@300;400;500;600;700;800&display=swap");
 
 @font-face {
   font-family: OPTITomaso Extended;
-  src: url('../public/assets/OPTITomaso-Extended.otf');
+  src: url("../public/assets/OPTITomaso-Extended.otf");
 }
 
 * {
-  font-family: 'OPTITomaso Extended', sans-serif
+  font-family: "OPTITomaso Extended", sans-serif;
 }
 
 html {
   overflow-y: scroll;
+}
+
+img {
+  max-width: 100%;
+  height: auto;
 }
