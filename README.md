@@ -16,6 +16,10 @@
 
 ## Working Parts
 
+- Responsiveness
+  - Mobile written in Tailwind
+  - Upscaling Media Queries written in Sass
+
 - Homepage
   - Link from Shell Icon
   - Navtigate to Shop from 'Shop Shells' button
