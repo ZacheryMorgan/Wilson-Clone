@@ -15,7 +15,7 @@ const Nav = ({ onClick }) => {
         <ul className="site-links flex gap-14">
           <Link to="/shop">
             <li className="text-l font-bold cursor-pointer relative p-2 uppercase hidden xl:block">
-              Sportswear
+              Shells
             </li>
           </Link>
           <li className="text-l font-bold cursor-pointer relative p-2 uppercase hidden xl:block">

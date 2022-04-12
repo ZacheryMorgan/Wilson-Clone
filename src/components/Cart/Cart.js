@@ -68,7 +68,7 @@ const Cart = ({ cart, show, toggle, editQuantity }) => {
         </div>
         {cart.length > 0 && (
           <div className="cart-total font-black text-xs tracking-wide mb-4">
-            SUBTOTAL: ${total}
+            SUBTOTAL: ${Math.ceil(total * 100) / 100}
           </div>
         )}
         {cart.length > 0 && (

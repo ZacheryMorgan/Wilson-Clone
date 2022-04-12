@@ -1,7 +1,7 @@
 import React from "react";
 
 const CartItem = ({ item, editQuantity }) => {
-  const total = item.quantity * item.price;
+  const total = Math.ceil((item.quantity * item.price) * 100) / 100;
 
   return (
     <div className="item-wrapper border-t border-gray-500 pr-2 pl-6 py-4 flex items-center gap-3">
