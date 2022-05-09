@@ -4,3 +4,21 @@
     grid-template-columns: 1fr 1fr;
   }
 }
+
+.quilt-item {
+  opacity: 0;
+  transition: all 450ms ease-in;
+
+  &:nth-child(odd) {
+    left: -200px
+  }
+
+  &:nth-child(even) {
+    left: 200px
+  }
+}
+
+.appear {
+  opacity: 1;
+  left: 0 !important
+}

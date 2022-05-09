@@ -6,15 +6,20 @@ import "../../styles/MainProduct.scss";
 const MainProducts = () => {
   let width;
   window.addEventListener("resize", () => {
-    if (window.innerWidth >= 771) {
-      return;
-    }
+    const cardWrapper = document.querySelector(".card-wrapper")
+    cardWrapper.style.transform = "translate3d(0px, 0px, 0px)"
+    document.querySelector(".left").style.fill = "#d1d5db";
+    document.querySelector(".right").style.fill = "#101820";
+
+    // if (window.innerWidth >= 771) {
+    //   return;
+    // }
     width = JSON.stringify(document.querySelector(".product-card").offsetWidth);
-    const cardWrapper = document.querySelector(".card-wrapper");
-    cardWrapper.style.transform = `translate3d(${Math.floor(
-      -width - 8
-    )}px, 0px, 0px)`;
+    // cardWrapper.style.transform = `translate3d(${Math.floor(
+    //   -width - 8
+    // )}px, 0px, 0px)`;
     return width;
+
   });
 
   window.addEventListener("load", () => {

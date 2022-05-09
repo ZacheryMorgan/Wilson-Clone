@@ -1,5 +1,5 @@
 import { HashRouter as Router, Routes, Route } from "react-router-dom";
-import React, { useEffect, useState } from "react";
+import React, { useState } from "react";
 import Home from "./components/Home";
 import Nav from "./components/Header/Nav";
 import Header from "./components/Header/Header";
@@ -55,7 +55,6 @@ const RouteSwitch = () => {
       });
     });
 
-    console.log(cart);
   };
 
   return (

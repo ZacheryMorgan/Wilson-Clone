@@ -9,7 +9,7 @@ const Nav = ({ onClick }) => {
   return (
     <nav className="border-b">
       <div className="nav-wrapper flex justify-between items-center h-12 px-5 max-w-screen-2xl mx-auto xl:h-20">
-        <Link to="/">
+        <Link to="/" aria-label='Logo'>
           <GiNautilusShell className="w-8 h-8 mr-10 xl:w-12 xl:h-12 min-w-min  hover:cursor-pointer" />
         </Link>
         <ul className="site-links flex gap-14">
@@ -26,16 +26,16 @@ const Nav = ({ onClick }) => {
           </li>
         </ul>
         <ul className="flex gap-1 nav-links">
-          <button className="">
+          <button className="" aria-label='Search Button'>
             <BiSearch className="hover:fill-red-600 cursor-pointer transition-all duration-300 w-6 h-6" />
           </button>
-          <button className="hidden xl:block">
+          <button className="hidden xl:block" aria-label='User Button'>
             <FiUser className="hover:stroke-red-600 cursor-pointer transition-all duration-300 w-6 h-6" />
           </button>
-          <button className="" onClick={onClick}>
+          <button className="" onClick={onClick} aria-label='Cart Button'>
             <BiShoppingBag className="hover:fill-red-600 cursor-pointer transition-all duration-300 w-6 h-6 " />
           </button>
-          <button className="xl:hidden">
+          <button className="xl:hidden" aria-label='Menu Button'>
             <GiHamburgerMenu className="hover:fill-red-600 cursor-pointer transition-all duration-300 w-6 h-6 active:border-black after:border-2" />
           </button>
         </ul>

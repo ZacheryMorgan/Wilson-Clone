@@ -1,9 +1,14 @@
-import React from "react";
+import React, { useEffect } from "react";
 import "../../styles/MainQuiltItem.scss";
 
 const MainQuiltItem = () => {
+
+
+
+
+
   return (
-    <div className="relative">
+    <div className="relative quilt-item">
       <img src="./assets/beach710.jpg" alt="" className="w-full" />
       <div className="quilt-content text-left absolute bottom-0 left-0 p-3">
         <p className="text-lg font-black text-white pb-3">SAVE ON SETS</p>
