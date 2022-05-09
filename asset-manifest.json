@@ -1,14 +1,14 @@
 {
   "files": {
-    "main.css": "/Wilson-Clone/static/css/main.79e3ae85.css",
-    "main.js": "/Wilson-Clone/static/js/main.7ba5116a.js",
-    "static/media/OPTITomaso-Extended.otf": "/Wilson-Clone/static/media/OPTITomaso-Extended.806d41d3f5087797388f.otf",
-    "index.html": "/Wilson-Clone/index.html",
-    "main.79e3ae85.css.map": "/Wilson-Clone/static/css/main.79e3ae85.css.map",
-    "main.7ba5116a.js.map": "/Wilson-Clone/static/js/main.7ba5116a.js.map"
+    "main.css": "./static/css/main.c1ca9aae.css",
+    "main.js": "./static/js/main.63b16d14.js",
+    "static/media/OPTITomaso-Extended.otf": "./static/media/OPTITomaso-Extended.806d41d3f5087797388f.otf",
+    "index.html": "./index.html",
+    "main.c1ca9aae.css.map": "./static/css/main.c1ca9aae.css.map",
+    "main.63b16d14.js.map": "./static/js/main.63b16d14.js.map"
   },
   "entrypoints": [
-    "static/css/main.79e3ae85.css",
-    "static/js/main.7ba5116a.js"
+    "static/css/main.c1ca9aae.css",
+    "static/js/main.63b16d14.js"
   ]
 }
