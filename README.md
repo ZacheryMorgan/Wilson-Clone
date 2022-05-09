@@ -1,7 +1,10 @@
 # Wilson Homepage Clone
 
-[Clone](https://zacherymorgan.github.io/Wilson-Clone/) </br>
-[Source](https://www.wilson.com/en-us)
+### [Clone](https://zacherymorgan.github.io/Wilson-Clone/) </br>
+### [Source Material](https://www.wilson.com/en-us)
+
+
+### Built to mainly practice Tailwind, but also React Router, and Image Responsiveness
 
 # Tools
 
@@ -11,10 +14,29 @@
 - React-router-dom
 - Sass (for upscaling media queries)
 
-### Just to Practice
+## Working Parts
 
-- Fully built mobile first with Tailwind and Sass for media queries.
-- Random theme to practice customizing images with compressors / resizing to be more efficient with picture / srcset.
+- Responsiveness
+  - Mobile written in Tailwind
+  - Upscaling Media Queries written in Sass
+
+- Homepage
+  - Link from Shell Icon
+  - Navtigate to Shop from 'Shop Shells' button
+ 
+- Shop
+  - Link from 'SHELLS'
+  - Each card links to generated URL
+  - Able to add quantity to bag and return to shop
+  - Filter pops out in mobile but has no functionality
+ 
+- Bag
+  - Link from Bag Icon in Nav
+  - Shows all items in cart, their totals and overall total
+  - Able to edit quantity of item and remove
+
+- Footer
+  - Mobile dropdowns function but links do not go anywhere
 
 ### TODO
 
